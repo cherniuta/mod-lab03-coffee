@@ -1,3 +1,5 @@
+//Copyright 2025 cherniuta
+
 #include "Automata.h"
 #include <iostream>
 
@@ -7,12 +9,12 @@ int main() {
     machine.on();
     machine.getMenu();
     machine.coin(100);
-    machine.choice(1); // Выбираем кофе
+    machine.choice(1);
     machine.check();
     machine.cook();
 
     machine.coin(50);
-    machine.choice(0); // Выбираем чай
+    machine.choice(0);
     machine.check();
     machine.cook();
 

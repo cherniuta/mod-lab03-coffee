@@ -1,5 +1,7 @@
-#ifndef AUTOMATA_H
-#define AUTOMATA_H
+//Copyright 2025 cherniuta
+
+#ifndef INCLUDE_AUTOMATA_H_
+#define INCLUDE_AUTOMATA_H_
 
 #include <string>
 #include <vector>
@@ -13,27 +15,27 @@ enum STATES {
 };
 
 class Automata {
-private:
-    int cash;
-    std::vector<std::string> menu;
-    std::vector<int> prices;
-    STATES state;
-    int selectedDrink;
+ private:
+  int cash;
+  std::vector<std::string> menu;
+  std::vector<int> prices;
+  STATES state;
+  int selectedDrink;
 
-    void loadMenu();
+  void loadMenu();
 
-public:
-    Automata();
-    void on();
-    void off();
-    void coin(int amount);
-    void getMenu() const;
-    STATES getState() const;
-    void choice(int drinkIndex);
-    bool check();
-    void cancel();
-    void cook();
-    void finish();
+ public:
+  Automata();
+  void on();
+  void off();
+  void coin(int amount);
+  void getMenu() const;
+  STATES getState() const;
+  void choice(int drinkIndex);
+  bool check();
+  void cancel();
+  void cook();
+  void finish();
 };
 
-#endif // AUTOMATA_H
+#endif // INCLUDE_AUTOMATA_H_

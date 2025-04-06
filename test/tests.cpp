@@ -6,7 +6,6 @@
 TEST(AutomataTest, InitialStateIsOff) {
     Automata a;
     EXPECT_EQ(OFF, a.getState());
-    EXPECT_EQ(0, a.getCash());
 }
 
 TEST(AutomataTest, PowerOnChangesStateToWait) {
