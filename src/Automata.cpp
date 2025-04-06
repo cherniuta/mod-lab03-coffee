@@ -32,7 +32,7 @@ void Automata::coin(int amount) {
     if (state == WAIT || state == ACCEPT) {
         cash += amount;
         state = ACCEPT;
-        std::cout << "Deposited: " << amount << 
+        std::cout << "Deposited: " << amount <<
             ". Current balance: " << cash << std::endl;
     }
 }
@@ -41,7 +41,7 @@ void Automata::getMenu() const {
     if (state != OFF) {
         std::cout << "Menu:" << std::endl;
         for (size_t i = 0; i < menu.size(); ++i) {
-            std::cout << i + 1 << ". " << menu[i] << 
+            std::cout << i + 1 << ". " << menu[i] <<
                 " - " << prices[i] << " rub." << std::endl;
         }
     }
